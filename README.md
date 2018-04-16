@@ -12,6 +12,7 @@ Twitter usa redis para el acceso rapido a la informacion
 Sunat y Temas financiero nivel nacional que usan este producto por el tema de la concurrencia.
 
 **Credenciales**
+--------------------------------
 
 linux - root
 pass - redhat
@@ -42,6 +43,7 @@ La escritura entra por el Master pero la Lectura puede ser desde el Master o el 
 Es tipo Clave = Valor
 
 **Instalacion**
+----------------------------------------------
 
 Credenciales para acceder a la plataforma poner
 
@@ -50,7 +52,8 @@ redhat
 
 La consola grafica te permite ver todas las configuraciones generales de instalacion
 
-
+**comandos**
+------------------------------------------------
 
 
 
