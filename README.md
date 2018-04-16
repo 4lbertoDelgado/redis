@@ -154,6 +154,23 @@ $redis-cli –p 6380
 
 > SLOWLOG reset
 
+Creacion de una arquitectura de Maestro y Esclavo
+-------------------------------------------------
+
+Creamos 2 instancias
+
+> redis-server --port 6380 --dbfilename db1.db
+> redis-server --port 6381 --dbfilename db2.db
+
+Nos conectamos por un cliente al server 6381
+
+> redis-cli -p 6381
+
+Luego le indicamos que este sera el esclavo del 6380
+
+>  SLAVEOF localhost 6380
+
+Esta accion debe mostrar unas salidas en las ventanas de las instancias 6380 y 6381
 
 
 
