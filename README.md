@@ -119,10 +119,6 @@ Para matar una instancia especifica
 
 Se puede levantar n instancias pero va a depender de la performance del server
 
-
-
-
-
 Para configurar las cosas en vuelo, dentro de la consola cliente:
 usamos config set. para hacerlos de manera permanente podemos configurar el archivo de configuracion
 
@@ -172,6 +168,10 @@ Luego le indicamos que este sera el esclavo del 6380
 
 Esta accion debe mostrar unas salidas en las ventanas de las instancias 6380 y 6381
 
+Sacando de la regla de juego a nuestro esclavo.. desde el mismo esclavo podemos romper la conexion. 
+Nos conectamos a nuestro esclavo
+
+> SLAVEOF NO ONE
 
 
 
