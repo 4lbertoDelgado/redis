@@ -12,6 +12,7 @@ Twitter usa redis para el acceso rapido a la informacion
 Sunat y Temas financiero nivel nacional que usan este producto por el tema de la concurrencia.
 
 **Credenciales**
+
 linux - root
 pass - redhat
 
@@ -38,7 +39,20 @@ Redis da la particularidad para manejar instancias como jboos
 
 La escritura entra por el Master pero la Lectura puede ser desde el Master o el Esclavo
 
+Es tipo Clave = Valor
+
 **Instalacion**
+
+Credenciales para acceder a la plataforma poner
+
+root@redis.com
+redhat
+
+La consola grafica te permite ver todas las configuraciones generales de instalacion
+
+
+
+
 
 
 
