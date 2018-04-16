@@ -52,8 +52,130 @@ redhat
 
 La consola grafica te permite ver todas las configuraciones generales de instalacion
 
-**comandos**
+**Comandos**
 ------------------------------------------------
+
+Para ingresar a la consola cliente
+
+redis-cli -p 14000
+
+Dentro de la consola si lanzamos un ping, debe responder pong
+
+> ping
+PONG
+
+Muestra informacion del servidor
+
+> info
+> info CPU
+  
+Para sali de la consola
+
+> quit
+
+Este Almacenamiento esta en memoria y pude vivir mientras la conexion del cliente este activa
+Una vez al salir del cliente la informacion se pierde. Esto solo pasa cuando la BD esta en memoria.
+Al hacer la instalacion de persistencia los datos se mantienen asi salgas de la sesion.
+
+Para setear una clave valor (x = 1000)
+
+> set x 1000
+
+Para obtener el valor
+
+> get x
+
+Para limpiar la sesion
+
+> FLUSHALL
+
+Para limpiar la consola
+
+> clear
+
+Fuera del cliente para ver los datos del servidor y levantar una instancia por defecto
+
+# redis-server
+
+Para matarla CTRL + C
+
+Para crear una instancia especifica 
+
+# redis-server --port 14001
+
+Para conectarte a la instancia nueva
+
+# redis-cli -p 14001
+
+Cuando no se especifica el puesto redis crea una instancia por defecto en la 6379
+
+Para matar una instancia por defecto
+
+# redis-cli shutdown
+
+Para matar una instancia especifica
+
+# redis-cli -p 14001 shutdown
+
+Se puede levantar n instancias pero va a depender de la performance del server
+
+
+
+
+
+Para configurar las cosas en vuelo, dentro de la consola cliente:
+usamos config set. para hacerlos de manera permanente podemos configurar el archivo de configuracion
+
+Colocamos un pass a la instancia para que nos permita grabar
+
+> CONFIG SET requirepass mysuperpass
+
+Pi queremos grabar nuevamente nos dara error
+
+Para autenticamos usamos
+
+> auth mysuperpass
+
+Para habilitar un Listener de Escucha para monitorear la instancia usar el comenado
+
+> monitor
+
+#Para conseguir la información del log ejecutemos el siguiente comando.
+
+$redis-cli –p 6380
+
+> SLOWLOG GET
+
+#Para ver el tamaño dl log
+
+> SLOWLOG LEN
+
+#Para el reset de la información gestionada por el log
+
+> SLOWLOG reset
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
