@@ -124,9 +124,9 @@ usamos config set. para hacerlos de manera permanente podemos configurar el arch
 
 Colocamos un pass a la instancia para que nos permita grabar
 
-> CONFIG SET requirepass mysuperpass
+> CONFIG SET requirepass Sapia123mysuperpass
 
-Pi queremos grabar nuevamente nos dara error
+Si queremos grabar nuevamente nos dara error
 
 Para autenticamos usamos
 
